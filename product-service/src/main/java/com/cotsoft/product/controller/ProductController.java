@@ -40,6 +40,13 @@ public class ProductController {
 		Product producto = service.findById(id);
 		producto.setPort( port );
 		
+		
+		/*try {
+			Thread.sleep(2000L);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}*/
+		
 		return service.findById(id);
 	}
 	
